@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        td+td, th+th {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    1.Adjacent-Sibling selector คือการกำหนดกฏควบคุมการแสดงผลของอิลิเมนต์ที่เป็น Sibling Element ของอีกอิลิเมนต์หนึ่งเช่น - em + em {color:green} 
+โดยเครื่องหมาย + โดยมันจะจับตัวต่อไปที่อยู่ในชั้นเดียวกันของตัวที่เรากำหนด <br><br><br>
+    2.ตัวอย่างการใช้งาน Selector ชนิด Adjacent-Sibling selector จากข้อ 1 คือ td+td, th+th {background-color: red;} ก็คือ td+td จะ ข้าม Adjacent-Sibling selector 1 ไปและแสดงแถบแดงตัวถัดไปเรื่อย ส่วน th+th จะเป็นหัวข้อย่อยสักเกตุจะเป็นตัวพิมพ์เล็ก ก็จะแสดงเหมือนกัน คือ ข้ามตัวแรกแสดงตัวถัดไปเพราะ ใช้ + ได้ดังภาพ<br>
+    <table>
+        <tr>
+            <th>Adjacent-Sibling selector 1</th>
+            <th>Adjacent-Sibling selector 2</th>
+            <th>Adjacent-Sibling selector 3</th>
+        </tr><br>
+        <tr>
+            <td>Adjacent-Sibling selector 4</td>
+            <td>Adjacent-Sibling selector 5</td>
+            <td>Adjacent-Sibling selector 6</td>
+        </tr>
+    </table>
+</body>
+</html>
